@@ -1,7 +1,12 @@
 * {
-    padding: 10;
-    margin: 10;
+    padding: 0;
+    margin: 0;
 }
+
+#wrapper {
+    width: 100%;
+    margin: auto;
+    }
 
 body {
     line-height: 1.6em;
@@ -36,18 +41,19 @@ a:hover {
 
 a:active {
     text-decoration: underline;
-    color: rgb(231, 84, 128);
+    color: #e75480;
 }
 
 h1 { 
     font-size: 3em;
-    line-height: 0em;
+    line-height: 2em;
     font-weight: 600;
     color: rgb(231, 84, 128);
 }
 
 h4 {
     color: rgb(231, 84, 128);
+    text-align: right
 }
 
 *{
@@ -61,18 +67,110 @@ ul#mainNav {
 }
 
 img {
-    width: 50%;
+    width: 35%;
     height: 0%;
 }
 
 header {
-    text-transform: uppercase;
-    text-align: right;
+    width: 100%;
+    margin: 0%;
+    padding: 0%;
+    text-align: left;
+}
+
+nav {
+    width: 50%;
+    margin: 0%;
+    padding: 0%;
+    text-transform: uppercase
 }
 
 footer {
+    width: 100%;
+    margin: 0%;
+    padding: 0%;
     text-decoration: underline;
     color: #F2F0EF;
     text-align: center;
     background-image: url("footer-background.jpeg");
+}
+
+.columns {float:left;}
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+.height {
+    height: 30em;
+}
+
+.relative {
+    position: relative;
+    top: 4em;
+    left: 4em;
+    z-index: -1;
+}
+
+.absolute {
+    position: absolute;
+    top: 4em;
+    right: 4em;
+    z-index: -1;
+}
+
+.sticky {
+    position: sticky;
+    top: 0;
+    left: 0;
+    float: none;
+}
+
+.fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.clear-left {
+    clear:left;
+}
+
+.pink {
+    background-color: #e75480;
+}
+
+.peach {
+    background-color: #ff6b51
+}
+
+.orange {
+    background-color: #ffa13d
+}
+
+.yellow {
+    background-color: #ffd651
+}
+
+.green {
+    background-color: #80d354
+}
+
+p {
+    margin: none;
+    text-align: left;
+}
+
+div {
+    box-sizing: border-box;
+    /* border: 1px black; */
+
 }
