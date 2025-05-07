@@ -71,28 +71,32 @@ img {
     height: 0%;
 }
 
-header {
+.header {
     width: 100%;
     margin: 0%;
     padding: 0%;
+    position: absolute;
     text-align: left;
 }
 
-nav {
+.nav {
     width: 50%;
     margin: 0%;
     padding: 0%;
+    position: absolute;
     text-transform: uppercase
 }
 
-footer {
+.footer {
     width: 100%;
     margin: 0%;
     padding: 0%;
+    position: relative;
+    bottom: 0;
+    left: 0;
+    z-index: -10;
     text-decoration: underline;
-    color: #F2F0EF;
-    text-align: center;
-    background-image: url("footer-background.jpeg");
+    text-align: left;
 }
 
 .columns {float:left;}
@@ -164,12 +168,12 @@ footer {
     background-color: #80d354
 }
 
-p {
+.p {
     margin: none;
     text-align: left;
 }
 
-div {
+.div {
     box-sizing: border-box;
     /* border: 1px black; */
 
