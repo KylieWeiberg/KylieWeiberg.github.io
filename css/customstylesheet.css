@@ -9,6 +9,10 @@ h1, h2, h3, h4, h5, h6 {
     font-family: "Gilda Display", serif;
 }
 
+h1 {
+    padding-top: 3rem;
+}
+
 .gilda-display-regular {
     font-family: "Gilda Display", serif;
     font-weight: 400;
@@ -17,6 +21,7 @@ h1, h2, h3, h4, h5, h6 {
 
 ul {
     list-style-type: none;
+    padding-top: 3rem;
 }
 
 li {
@@ -25,13 +30,13 @@ li {
 }
 
 a:link {
-    color: white;
+    color: #ffdaea;
 }
 
 a:visited {
-    color: white;
+    color: #ffdaea;
 }
 
 a:hover {
-    color: rgb(255, 196, 220);
+    color: #ffffff;
 }
