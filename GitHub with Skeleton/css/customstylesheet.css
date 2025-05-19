@@ -16,12 +16,22 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 ul {
-    list-style: none;
-    font-style: white;
-    margin: 1.5rem 0 1.5rem 3rem;
-    font-size: 90%; 
+    list-style-type: none;
 }
 
 li {
-    margin-bottom: 1rem; 
+    display: inline;
+    padding-right: 3rem;
+}
+
+a:link {
+    color: white;
+}
+
+a:visited {
+    color: white;
+}
+
+a:hover {
+    color: rgb(255, 196, 220);
 }
