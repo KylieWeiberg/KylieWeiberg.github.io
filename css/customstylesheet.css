@@ -9,10 +9,6 @@ h1, h2, h3, h4, h5, h6 {
     font-family: "Gilda Display", serif;
 }
 
-h1 {
-    padding-top: 3rem;
-}
-
 .gilda-display-regular {
     font-family: "Gilda Display", serif;
     font-weight: 400;
@@ -40,3 +36,29 @@ a:visited {
 a:hover {
     color: #ffffff;
 }
+
+h1 {
+    padding-top: 3rem;
+    color: #ffdaea;
+    animation-name: example;
+    animation-duration: 8s;
+}
+  
+@keyframes example {
+    0% {color: #ffdaea;}
+    50% {color: #c71a65;}
+    100% {color: #ffdaea;}
+}
+
+img {
+    transition: transform 2s;
+}
+  
+img:hover {
+    transform: rotate(360deg);
+}
+
+body {
+    height: 2000px;
+    background: linear-gradient(180deg, #ec88ae 0%, #b4104f 75%);
+}   
