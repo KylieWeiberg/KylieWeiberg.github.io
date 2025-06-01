@@ -21,6 +21,10 @@ h2 {
     text-align: right;
 }
 
+h4 {
+    color: black;
+}
+
 h5 {
     text-transform: uppercase;
     font-variation-settings: "wght" 600;
@@ -72,7 +76,7 @@ a:hover {
   
 .overlay-text {
     position: absolute;
-    top: 10%;
+    top: 15%;
     transform: translate(10%, -50%);
 }
 
