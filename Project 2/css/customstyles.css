@@ -84,6 +84,30 @@ a:hover {
     transform: translate(10%, -50%);
 }
 
+.overlay-text1 {
+    position: absolute;
+    top: 100%;
+    transform: translate(220%, -320%);
+}
+
+.overlay-text2 {
+    position: absolute;
+    top: 100%;
+    transform: translate(400%, -200%);
+}
+
+.overlay-text3 {
+    position: absolute;
+    top: 100%;
+    transform: translate(200%, -1400%);
+}
+
+.overlay-text4 {
+    position: absolute;
+    top: 100%;
+    transform: translate(30%, -165%);
+}
+
 /* The flip box container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
 .flip-box {
     background-color: transparent;
@@ -154,7 +178,53 @@ a:hover {
 }
 
 .fwh-slide--bg-gold {
+    height: 110vh;
     background: #E7B468;
+    color: white;
+}
+
+.fwh-slide--bg-purple {
+    background: #D8A2DD;
+    color: white;
+}
+
+.fwh-slide--bg-red {
+    background: #731700;
+    color: white;
+}
+
+.fwh-slide--bg-blue {
+    background: #9CB6CD;
+    color: white;
+}
+
+.fwh-slide--bg-black {
+    background: #000000;
+    color: white;
+}
+
+.fwh-slide--bg-pink {
+    background: #FEBDDF;
+    color: white;
+}
+
+.fwh-slide--bg-gray {
+    background: #C7C7C7;
+    color: white;
+}
+
+.fwh-slide--bg-darkblue {
+    background: #034286;
+    color: white;
+}
+
+.fwh-slide--bg-darkgray {
+    background: #322826;
+    color: white;
+}
+
+.fwh-slide--bg-white {
+    background: #F6F6F6;
     color: white;
 }
 
