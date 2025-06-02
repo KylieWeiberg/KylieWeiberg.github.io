@@ -81,7 +81,8 @@ a:hover {
 .overlay-text {
     position: absolute;
     top: 10%;
-    transform: translate(10%, -50%);
+    text-align: center;
+    transform: translate(0%, -190%);
 }
 
 .overlay-text1 {
