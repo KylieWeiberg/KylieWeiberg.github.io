@@ -82,7 +82,7 @@ a:hover {
     position: absolute;
     top: 10%;
     text-align: center;
-    transform: translate(0%, -190%);
+    transform: translate(10%, -185%);
 }
 
 .overlay-text1 {
@@ -100,7 +100,7 @@ a:hover {
 .overlay-text3 {
     position: absolute;
     top: 100%;
-    transform: translate(200%, -1400%);
+    transform: translate(200%, -9000%);
 }
 
 .overlay-text4 {
