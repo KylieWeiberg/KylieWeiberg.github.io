@@ -31,7 +31,7 @@ h5 {
 }
 
 p {
-    font-size: 12px;
+    font-size: 13px;
 }
 
 body {
@@ -47,7 +47,6 @@ body {
 ul {
     list-style-type: none;
     padding-top: 3rem;
-    text-align: right;
     line-height: 1.5rem;
 }
 
@@ -80,9 +79,8 @@ a:hover {
   
 .overlay-text {
     position: absolute;
-    top: 10%;
-    text-align: center;
-    transform: translate(10%, -185%);
+    top: 50%;
+    transform: translate(30%, -50%);
 }
 
 .overlay-text1 {
@@ -146,20 +144,12 @@ a:hover {
 }
 
 .footer {
-    width: 100%;
-    margin: 0%;
-    padding: 0%;
-    position: relative;
-    bottom: 0;
-    left: 0;
-    z-index: -10;
-    text-decoration: underline;
-    text-align: left;
+    text-align: center;
 }
 
 #bottomfooter li {
     display: inline;
-    padding-right: 3rem;
+    text-align: center;
 }
 
 #filler {
@@ -175,7 +165,7 @@ a:hover {
     height: 100vh;
     background: #96c19b;
     box-sizing: border-box;
-    padding: 35px;
+    padding: 50px;
 }
 
 .fwh-slide--bg-gold {
@@ -200,7 +190,7 @@ a:hover {
 }
 
 .fwh-slide--bg-black {
-    background: #000000;
+    background: #0f0f0f;
     color: white;
 }
 
@@ -233,6 +223,18 @@ a:hover {
     margin: 0;
 }
 
+.fwh-slide--bg-discography {
+    background: #0f0f0f;
+    color: white;
+    margin: 10%;
+}
+
+.fwh-slide--bg-childhood {
+    background: #0f0f0f;
+    color: white;
+    margin: 10%;
+}
+
 #rotation {
     animation: rotation 15s linear infinite;
     
@@ -240,4 +242,11 @@ a:hover {
 
 @keyframes rotation {
     100% {transform: rotate(360deg)}
+}
+
+@media (min-width: 550px) {
+    .container {
+      width: 100%;
+      max-width: none; 
+    }
 }
