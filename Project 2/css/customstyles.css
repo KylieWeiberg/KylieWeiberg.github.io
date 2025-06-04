@@ -52,8 +52,8 @@ body {
 
 ul {
     list-style-type: none;
-    padding-top: 3rem;
-    line-height: 1.5rem;
+    padding-top: 0rem;
+    line-height: 2rem;
 }
 
 li {
@@ -93,25 +93,7 @@ a:hover {
     top: 100%;
     transform: translate(200%, -320%);
 }
-/* 
-.overlay-text2 {
-    position: absolute;
-    top: 100%;
-    transform: translate(400%, -200%);
-}
 
-.overlay-text3 {
-    position: absolute;
-    top: 100%;
-    transform: translate(200%, -9000%);
-}
-
-.overlay-text4 {
-    position: absolute;
-    top: 100%;
-    transform: translate(30%, -165%);
-}
-*/
 /* The flip box container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
 .flip-box {
     background-color: transparent;
