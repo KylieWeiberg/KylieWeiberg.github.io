@@ -7,17 +7,15 @@
 }
 
 h1 {
-    font-family: "Albert Sans", sans-serif;
     font-variation-settings: "wght" 900;
     text-transform: uppercase;
-    font-size: 100px;
+    font-size: 140px;
 }
 
 h2 {
-    font-family: "Albert Sans", sans-serif;
     font-variation-settings: "wght" 900;
     text-transform: uppercase;
-    font-size: 100px;
+    font-size: 140px;
     text-align: right;
 }
 
@@ -30,6 +28,15 @@ h5 {
     font-variation-settings: "wght" 600;
 }
 
+h6 {
+    text-transform: uppercase;
+    font-variation-settings: "wght" 900;
+    font-size: 60px;
+    color: black;
+    text-align: center;
+    line-height: 80px;
+}
+
 p {
     font-size: 13px;
 }
@@ -37,7 +44,6 @@ p {
 body {
     font-family: "Albert Sans", sans-serif;
     color: #fffdfe;
-    font-family: "Albert Sans", sans-serif;
     font-variation-settings: "wght" 300;
     margin-left: 0px;
     padding: 0px; 
@@ -70,25 +76,24 @@ a:hover {
     position: relative;
     width: 100%;
     height: 100%;
-    margin: 0px;
-    padding: 0px;
     background-image: url("Images/title-image.png");
     background-size: cover;
     mask-image: linear-gradient(180deg, black 80%, transparent 100%);
 }
-  
+ 
 .overlay-text {
     position: absolute;
     top: 50%;
-    transform: translate(30%, -50%);
+    left: 20%;
+    transform: translate(0%, -50%);
 }
 
 .overlay-text1 {
     position: absolute;
     top: 100%;
-    transform: translate(220%, -320%);
+    transform: translate(200%, -320%);
 }
-
+/* 
 .overlay-text2 {
     position: absolute;
     top: 100%;
@@ -106,7 +111,7 @@ a:hover {
     top: 100%;
     transform: translate(30%, -165%);
 }
-
+*/
 /* The flip box container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
 .flip-box {
     background-color: transparent;
@@ -162,14 +167,21 @@ a:hover {
 }
 
 .fwh-slide {
-    height: 100vh;
+    height: auto;
     background: #96c19b;
     box-sizing: border-box;
-    padding: 50px;
+    padding: 10%;
+}
+
+.fwh-slide--bg-intro {
+    background: #fffefc;
+    color: rgb(0, 0, 0);
+    padding-top: 10%;
+    padding-bottom: 10%;
+    padding-left: 20%;
 }
 
 .fwh-slide--bg-gold {
-    height: 110vh;
     background: #E7B468;
     color: white;
 }
@@ -214,9 +226,13 @@ a:hover {
     color: white;
 }
 
-.fwh-slide--bg-white {
+.fwh-slide--bg-lyric {
     background: #F6F6F6;
-    color: white;
+    color: #000000;
+    padding-top: 10%;
+    padding-bottom: 10%;
+    padding-left: 20%;
+    padding-right: 20%;
 }
 
 .fwh-slide p {
@@ -226,18 +242,20 @@ a:hover {
 .fwh-slide--bg-discography {
     background: #0f0f0f;
     color: white;
-    margin: 10%;
 }
 
 .fwh-slide--bg-childhood {
     background: #0f0f0f;
     color: white;
-    margin: 10%;
 }
 
 #rotation {
-    animation: rotation 15s linear infinite;
-    
+    animation: rotation 15s linear infinite;  
+}
+
+#rotation2 {
+    animation: rotation 15s linear infinite;  
+    animation-delay: 4s;
 }
 
 @keyframes rotation {
