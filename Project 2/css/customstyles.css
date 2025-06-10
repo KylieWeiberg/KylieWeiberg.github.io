@@ -10,7 +10,7 @@ h1 {
     font-variation-settings: "wght" 900;
     text-transform: uppercase;
 
-    font-size: 55px;
+    font-size: 40px;
     line-height: 20px;
 }
 
@@ -22,6 +22,7 @@ h2 {
 }
 
 h4 {
+    font-size: 20px;
     float: left;
 }
 
@@ -317,6 +318,10 @@ a:hover {
         line-height: 50px;
     }
 
+    h4 {
+        font-size: 30px;
+    }
+
     .nav-menu {
         list-style-type: none;
         padding-top: 0rem;
@@ -360,6 +365,10 @@ a:hover {
     h1 {
         font-size: 100px;
         line-height: 100px;
+    }
+
+    h4 {
+        font-size: 35px;
     }
 
     h6 {
