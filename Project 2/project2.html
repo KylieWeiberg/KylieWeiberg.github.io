@@ -62,77 +62,47 @@
 
                 <br>
                 <br>
-                <br>
                 <h3>Taylor's Discography</h3>
 
                 <div class="row">
                     <div class="two columns">
                         <img class="u-full-width" src="images/debut-album.webp" style="border-radius: 5%;"/>
                     </div>
+
                     <div class="two columns">
-                        <div class="flip-box">
-                            <div class="flip-box-inner">
-                                <div class="flip-box-front">
-                                    <img class="u-full-width" src="images/fearless-album.jpg" style="border-radius: 5%;"/>
-                                </div>
-                                <div class="flip-box-back">
-                                    <img class="u-full-width" src="images/fearless-tv.jpg" style="border-radius: 5%;"/>
-                                </div>
-                            </div>
+                        <div class="disc-flip">
+                            <img class="u-full-width" src="images/fearless-album.jpg" style="border-radius: 5%;"/>
+                            <img class="u-full-width" src="images/fearless-tv.jpg" style="border-radius: 5%;"/>
                         </div>
                     </div>
 
-                    <div class="two columns">&nbsp;</div>
-
                     <div class="two columns">
-                        <div class="flip-box">
-                            <div class="flip-box-inner">
-                                <div class="flip-box-front">
-                                    <img class="u-full-width" src="images/speaknow-album.jpg" style="border-radius: 5%;"/>
-                                </div>
-                                <div class="flip-box-back">
-                                    <img class="u-full-width" src="images/speaknow-tv.jpg" style="border-radius: 5%;"/>
-                                </div>
-                            </div>
+                        <div class="disc-flip">
+                            <img class="u-full-width" src="images/speaknow-album.jpg" style="border-radius: 5%;"/>
+                            <img class="u-full-width" src="images/speaknow-tv.jpg" style="border-radius: 5%;"/>
                         </div>
                     </div>
 
-                    <div class="two columns">&nbsp;</div>
-
                     <div class="two columns">
-                        <div class="flip-box">
-                            <div class="flip-box-inner">
-                                <div class="flip-box-front">
-                                    <img class="u-full-width" src="images/red-album.png" style="border-radius: 5%;"/>
-                                </div>
-                                <div class="flip-box-back">
-                                    <img class="u-full-width" src="images/red-tv.jpeg" style="border-radius: 5%;"/>
-                                </div>
-                            </div>
+                        <div class="disc-flip">
+                            <img class="u-full-width" src="images/red-album.png" style="border-radius: 5%;"/>
+                            <img class="u-full-width" src="images/red-tv.jpeg" style="border-radius: 5%;"/>
                         </div>
                     </div>
                 </div>
 
-            <br>
+            <br class="hide-on-mobile">
 
                 <div class="row">
 
                     <div class="three columns">&nbsp;</div>
 
                     <div class="two columns">
-                        <div class="flip-box">
-                            <div class="flip-box-inner">
-                                <div class="flip-box-front">
-                                    <img class="u-full-width" src="images/1989-album.jpeg" style="border-radius: 5%;"/>
-                                </div>
-                                <div class="flip-box-back">
-                                    <img class="u-full-width" src="images/1989-tv.jpg" style="border-radius: 5%;"/>
-                                </div>
-                            </div>
+                        <div class="disc-flip">
+                            <img class="u-full-width" src="images/1989-album.jpeg" style="border-radius: 5%;"/>
+                            <img class="u-full-width" src="images/1989-tv.jpg" style="border-radius: 5%;"/>
                         </div>
                     </div>
-
-                    <div class="two columns">&nbsp;</div>
 
                     <div class="two columns">
                         <img class="u-full-width" src="images/reputation-album.jpg" style="border-radius: 5%;"/>
@@ -141,9 +111,10 @@
                         <img class="u-full-width" src="images/lover-album.jpg" style="border-radius: 5%;"/>
                     </div>
                 </div>
-            <br>
+
+            <br class="hide-on-mobile">
+
                 <div class="row">
-                    <div class="four columns">&nbsp;</div>
                     <div class="two columns">
                         <img class="u-full-width" src="images/folklore-album.png" style="border-radius: 5%;"/>
                     </div>
@@ -776,5 +747,25 @@
                     <p> Copyright 2025 | Website by Kylie Weiberg </p>
             </div>
         </div>
+
+        <script>
+        
+            // Detect touch device
+            
+                function isTouchDevice() {
+                    return 'ontouchstart' in window || navigator.maxTouchPoints > 0;
+                }
+
+                if (isTouchDevice()) {
+                    document.querySelectorAll('.disc-flip').forEach(function(card) {
+                    card.addEventListener('click', function(e) {
+                        e.preventDefault(); // Prevents double-activation on some devices
+                        card.classList.toggle('flipped');
+                    });
+                    });
+                }
+
+        </script>
+
     </body>
 </html>
